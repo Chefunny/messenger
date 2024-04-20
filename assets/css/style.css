@@ -1,0 +1,274 @@
+/*Generales*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e3e3;
+}
+
+.mainCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0px;
+  padding-left: 0px;
+  height: 100vh;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*Barra de navegación*/
+.header {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.fotomar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.maria {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px 10px;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText h4,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 8px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #959797;
+}
+
+.headerText h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.headerText p {
+  font-family: "Open Sans", sans-serif;
+
+  font-style: normal;
+  font-size: 12px;
+}
+
+/*Nuevo chat-----*/
+
+.nuevoChat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+
+  height: 150px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+.listaCont {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow-y: auto; /*ПРОКРУТКА прокрутку можно добавить любому родителю с overflow-y: auto;, я добавил к .listaCont,но затем нужно ограничить родителя по высоте, для этого можно добавить display: flex; flex-direction: column; к .navlist*/
+}
+
+.navlist {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px; /*__:-))__*/
+  width: 100vw;
+}
+
+.listaFoto img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  padding: 10px;
+  line-height: 0; /*зазор убрать на фото*/
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.listaText h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+
+.pL,
+h3 {
+  margin-left: 0px;
+  padding-left: 10px;
+}
+
+.pL {
+  font-family: "Open Sans", sans-serif;
+
+  font-style: normal;
+  font-size: 15px;
+}
+
+.pL2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Establece el color del texto de los enlaces */
+  display: block; /* Hace que el enlace llene el espacio de su contenedor <li> */
+  background-color: #a491d3;
+  padding: 10px 20px; /* Añade un poco más de relleno para hacer el botón más grande */
+  border-radius: 5px; /*добавляет приятные круглые края*/
+}
+
+a:hover {
+  background-color: #cdc3e6; /* Color de fondo al pasar el ratón */
+  color: white;
+}
+
+a:focus {
+  background-color: #828485;
+  color: white;
+}
+
+/*---MAIN PART---*/
+.mainPartF img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.mainPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinea el contenido verticalmente al centro */
+  align-items: center; /* Alinea el contenido horizontalmente al centro */
+  height: 100vh; /* Hace que .mainPart ocupe toda la altura de la ventana */
+}
+
+.mainPartT > h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+}
+
+.mainPartT > p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .mainPart {
+    display: none;
+  }
+}
